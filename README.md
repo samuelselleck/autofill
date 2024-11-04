@@ -24,8 +24,7 @@ autofill::autofill! {
 ANTHROPIC_API_KEY = "<your key here>"
 ```
 
-* to autocomplete, run your project with the AUTOFILL environment variable set to true: `AUTOFILL=true cargo run`. (NOTE: you most likely do not want to add this to the crate environment, since
-* this makes every LSP change result in a new API call).
+* to autocomplete, run your project with the AUTOFILL environment variable set to true: `AUTOFILL=true cargo run`. (NOTE: you most likely do not want to add this to the crate environment, since this makes every LSP invocation when a file is saved result in a new API call).
 * caches reponses based on the hash of the text inside the macro, and stores it in `target/autofill`.
 * **WARNING**: if `target/autofill` is not included in your git repository (which it is not by default), projects might not behave deterministically depending on model used.
 
