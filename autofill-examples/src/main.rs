@@ -1,13 +1,14 @@
-fn main() {
-    println!("factorial 5 = {}", factorial(6));
+// OBS this example
+mod adveture_game;
+// mod time_tracking_cli_app;
 
-    let u = (0.0, 1.0);
-    let v = (5.0, 5.0);
-    println!("projection test: {:?} * {:?} = {:?}", u, v, project(u, v));
+fn main() {
+    // TODO: this dodesn't reliably compile at the moment
+    // time_tracking_cli_app::time_tracking_app();
+    adveture_game::play_game();
 }
 
 autofill::autofill! {
-
     /// < 0 should return 1
     fn factorial(i: i32) -> i32 { todo!() }
 

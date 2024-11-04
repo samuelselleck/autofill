@@ -45,7 +45,7 @@ pub fn autofill(input: TokenStream) -> TokenStream {
         return cached.parse().unwrap_or_else(|_| code.into());
     }
 
-    if option_env!("AUTOFILL")
+    if !option_env!("AUTOFILL")
         .and_then(|a| a.parse::<bool>().ok())
         .unwrap_or_default()
     {
