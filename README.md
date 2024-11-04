@@ -1,3 +1,5 @@
+⚠️ This project is an experimental proof-of-concept for educational purposes only - please review any generated code carefully before using it in your projects.
+
 # Auto-complete Rust Code at Compile Time
 
 ```rust
