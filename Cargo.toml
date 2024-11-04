@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "autofill-macro",
+    "autofill-examples",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82.0"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/sellecksamuel/autofill"
+authors = ["Samuel Selleck <sellecksamuel@gmail.com>"]
+
+[workspace.dependencies]
+proc-macro2 = "1.0"
+syn = { version = "2.0", features = ["full", "extra-traits"] }
+quote = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+rustc_version = "0.4"
+thiserror = "1.0"
+trybuild = "1.0"
+tempfile = "3.0"
